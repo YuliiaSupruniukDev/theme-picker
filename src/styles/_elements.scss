@@ -1,0 +1,88 @@
+.output {
+  display: block;
+  width: 100%;
+  padding: 30px 20px;
+  font-size: 42px;
+  text-align: right;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+
+  background-color: var(--outputBackground);
+  color: var(--outputColor);
+}
+
+.keyboard {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 100%;
+
+  background-color: var(--keyboardBackground);
+
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-gap: 1.5em;
+  place-items: center;
+}
+
+.flex {
+  justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 30px;
+  font-size: 30px;
+  border-radius: 20px;
+
+  color: var(--mainKeyColor);
+  background-color: var(--mainKeyBackground);
+
+  min-width: 100px;
+  height: 60px;
+}
+
+.action {
+  line-height: 30px;
+  padding: 10px 20px;
+  font-size: 24px;
+  background-color: var(--actionKeyBackground);
+  color: var(--actionKeyColor);
+}
+
+.equal {
+  background-color: var(--equalKeyBackground);
+  color: var(--equalKeyColor);
+}
+
+.select {
+  background-color: var(--equalKeyBackground);
+  color: var(--equalKeyColor);
+  padding: 20px 10px;
+  margin: 10px;
+  font-size: 17px;
+  border-radius: 20px;
+
+  border: none;
+  outline: none;
+
+  float: right;
+
+  width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+  .button {
+    padding: 10px;
+    max-width: 80px;
+    min-width: 80px;
+    height: 40px;
+  }
+}
